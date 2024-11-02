@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Author @Francisco Cruz -->
+    <title>Tanita - Data Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convert Data to Table</h1>
+        <input type="text" id="inputString" placeholder="Coloque a string dos dados">
+        
+        <br />
+        <label for="csvFile" class="drop-container" id="dropcontainer">
+            <span class="drop-title">Drop files here</span>
+            or
+            <input type="file" id="csvFile" accept=".csv" required>
+        </label>
+
+        <br />
+
+        <button>Generate Table</button>
+        <div id="tableContainer"></div>
+
+        <br />
+
+    </div>
+
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="./scripts/dragDrop.js"></script>
+
+</body>
+</html>
