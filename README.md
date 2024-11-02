@@ -14,7 +14,7 @@
 This project, called **Tanita Data Converter**, allows users to upload an Excel file or copy the string of data extracted from the scale. From this data, a table is generated with the information organized from the Tanita scales.
 
 ## Access
-You can access the project through the link: [Tanita Data Converter](LINK_TO_PAGES).
+You can access the project through the link: [Tanita Data Converter](https://fcruz10.github.io/Tanita-Data-Convertor/).
 
 ## Tech Stack
 - HTML
