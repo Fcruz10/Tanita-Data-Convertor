@@ -112,7 +112,7 @@ export async function createTable() {
     
     //not mandatory because alert will come from fileReader
     if (inputString.trim() === '' && input === '') {
-        alert('Por favor, digite uma string válida ou insira um ficheiro válido.');
+        alert('Please, enter a valid string or a valid file.');
         return;
     }
 
@@ -123,16 +123,16 @@ export async function createTable() {
     const header = table.createTHead();
     const headerLine = header.insertRow();
     const headerCell1 = headerLine.insertCell();
-    headerCell1.innerHTML = '<strong>Dados</strong>';
+    headerCell1.innerHTML = '<strong>Data</strong>';
     const headerCell2 = headerLine.insertCell();
-    headerCell2.innerHTML = '<strong>Valor</strong>';
+    headerCell2.innerHTML = '<strong>Value</strong>';
 
     var tableBody = table.createTBody();
 
     for (let i = 0; i < data.length; i += 2) {
-        const linha = tableBody.insertRow();
-        const cellData = linha.insertCell();
-        const cellValue = linha.insertCell();
+        const line = tableBody.insertRow();
+        const cellData = line.insertCell();
+        const cellValue = line.insertCell();
         
         cellData.textContent = cypher[data[i]];
         cellValue.textContent = data[i + 1];
